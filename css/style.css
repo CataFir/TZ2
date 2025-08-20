@@ -1,0 +1,49 @@
+.theme
+{
+    border: 10px ridge rgb(58, 58, 58);
+    background-color: rgb(230, 230, 230);
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.subtheme
+{
+    border: 5px ridge rgb(58, 58, 58);
+    background-color: rgb(230, 230, 230);
+    padding: 0.5rem;
+    margin-top: 8px;
+    display: flex;
+    flex-direction: row;
+}
+
+.content
+{
+    border: 3px ridge rgb(58, 58, 58);
+    background-color: rgb(230, 230, 230);
+    padding: 0.5rem;
+    margin-top: 8px;
+}
+
+.link
+{
+    border: 2px ridge rgb(58, 58, 58);
+    background-color: rgb(212, 212, 212);
+    padding: 0.5rem;
+    width: 33%;
+    margin: auto;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.link:hover
+{
+    background-color: rgb(230, 230, 230);
+}
+
+.hidden {
+    display: none;
+}
