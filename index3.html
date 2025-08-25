@@ -1,0 +1,135 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="theme">
+        <a href="index.html" class="link">
+            <h2>Тема 1</h2>
+        </a>
+        <a href="index2.html" class="link">
+            <h2>Тема 2</h2>
+        </a>
+        <a href="index3.html" class="link" style="background-color: yellow;">
+            <h2>Тема 3</h2>
+        </a>
+    </div>
+
+    <div class="subtheme">
+        <button onclick="toggleElement()" class="link" id="btn1" style="background-color: yellow;">Подтема 1.1</button>
+        <button onclick="toggleElement2()" class="link" id="btn2">Подтема 1.2</button>
+        <button onclick="toggleElement3()" class="link" id="btn3">Подтема 1.3</button>
+    </div>
+
+    <div id="elementToHide">
+        <div class="content">
+            <center><h3>Подтема 3.1</h3></center>
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
+            totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta 
+            sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia 
+            consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui 
+            dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora 
+            incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum 
+            exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem 
+            vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum 
+            qui dolorem eum fugiat quo voluptas nulla pariatur?
+        </div>
+    </div>
+
+    <div id="elementToHide2" class="hidden">
+        <div class="content">
+            <center><h3>Подтема 3.2</h3></center>
+            There are many variations of passages of Lorem Ipsum available, but the majority have suffered 
+            alteration in some form, by injected humour, or randomised words which don't look even slightly 
+            believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything 
+            embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend 
+            to repeat predefined chunks as necessary, making this the first true generator on the Internet. 
+            It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, 
+            to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free 
+            from repetition, injected humour, or non-characteristic words etc.
+        </div>
+    </div>
+
+    <div id="elementToHide3" class="hidden">
+        <div class="content">
+            <center><h3>Подтема 3.3</h3></center>
+            Sed accumsan sapien non justo pharetra accumsan. Pellentesque habitant morbi tristique senectus et 
+            netus et malesuada fames ac turpis egestas. Mauris nec leo eros. Vestibulum gravida imperdiet massa et cursus. 
+            Integer fringilla velit in lacus elementum, eu semper justo semper. Ut tristique magna vitae dolor 
+            aliquet, at rutrum nunc semper. Etiam iaculis ligula viverra condimentum volutpat. Sed nec semper lorem. 
+            Praesent dapibus dui id commodo tristique. Ut sed faucibus ipsum, et euismod sem. In maximus pretium ligula, 
+            sit amet suscipit tellus convallis vel. Curabitur risus nisl, semper vitae ultrices in, condimentum ut ex. 
+            Nullam ornare purus nunc, vitae congue magna vulputate quis. Nulla eleifend ante eleifend arcu scelerisque euismod. 
+            Nam ornare ultricies nunc posuere rhoncus. Praesent non viverra metus, at scelerisque urna.
+        </div>
+    </div>
+
+    <script>
+        function toggleElement() 
+        {
+            var element = document.getElementById("elementToHide");
+            element.classList.remove("hidden");
+
+            var element = document.getElementById("elementToHide2");
+            element.classList.add("hidden");
+
+            var element = document.getElementById("elementToHide3");
+            element.classList.add("hidden");
+
+            var element = document.getElementById("btn1");
+            element.style.backgroundColor = 'yellow';
+
+            var element = document.getElementById("btn2");
+            element.style.backgroundColor = 'whitesmoke';
+
+            var element = document.getElementById("btn3");
+            element.style.backgroundColor = 'whitesmoke';
+        };
+
+        function toggleElement2() 
+        {
+            var element = document.getElementById("elementToHide2");
+            element.classList.remove("hidden");
+
+            var element = document.getElementById("elementToHide");
+            element.classList.add("hidden");
+
+            var element = document.getElementById("elementToHide3");
+            element.classList.add("hidden");
+
+            var element = document.getElementById("btn2");
+            element.style.backgroundColor = 'yellow';
+
+            var element = document.getElementById("btn1");
+            element.style.backgroundColor = 'whitesmoke';
+
+            var element = document.getElementById("btn3");
+            element.style.backgroundColor = 'whitesmoke';
+        };
+
+        function toggleElement3() 
+        {
+            var element = document.getElementById("elementToHide3");
+            element.classList.remove("hidden");
+
+            var element = document.getElementById("elementToHide");
+            element.classList.add("hidden");
+
+            var element = document.getElementById("elementToHide2");
+            element.classList.add("hidden");
+
+            var element = document.getElementById("btn3");
+            element.style.backgroundColor = 'yellow';
+
+            var element = document.getElementById("btn1");
+            element.style.backgroundColor = 'whitesmoke';
+
+            var element = document.getElementById("btn2");
+            element.style.backgroundColor = 'whitesmoke';
+        };
+    </script>
+</body>
+</html>
